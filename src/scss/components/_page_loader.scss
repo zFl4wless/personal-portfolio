@@ -35,8 +35,16 @@
     .terminal__response-wrapper {
       margin-top: .5em;
 
-      .terminal__response {
+      .terminal__response--progress-bar {
+        letter-spacing: 2px;
+        font-weight: 300;
+      }
+
+      .terminal__response--result {
+        display: block;
         color: variables.$clr-warning;
+        margin-top: .2em;
+        font-size: .8rem;
         text-shadow: 0 0 4px variables.$clr-warning;
         letter-spacing: 4px;
       }

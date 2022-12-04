@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,10 +38,11 @@
     <!-- Typed -->
     <script src="https://rawgit.com/mattboldt/typed.js/master/lib/typed.js"></script>
 </head>
+
 <body>
-<div class="loader">
-    <div class="terminal">
-        <pre style="transform: translateX(-90px)">
+    <div class="loader">
+        <div class="terminal">
+            <pre style="transform: translateX(-90px)">
             ███████╗ ██╗ ██╗  ██╗ ██╗    ██╗ ██╗      ███████╗ ███████╗ ███████╗
             ██╔════╝ ██║ ██║  ██║ ██║    ██║ ██║      ██╔════╝ ██╔════╝ ██╔════╝
             █████╗   ██║ ███████║ ██║ █╗ ██║ ██║      █████╗   ███████╗ ███████╗
@@ -48,152 +50,151 @@
             ██║      ███████╗ ██║ ╚███╔███╔╝ ███████╗ ███████╗ ███████║ ███████║
             ╚═╝      ╚══════╝ ╚═╝  ╚══╝╚══╝  ╚══════╝ ╚══════╝ ╚══════╝ ╚══════╝
         </pre>
-        <p>
-            Fl4wless's Personal Portfolio [Version 1.0.8]
-            <br>
-            (c) Fl4wless. All rights reserved.
-        </p>
-        <span class="terminal__cmd"></span>
-        <div class="terminal__response-wrapper">
-            <span class="terminal__response terminal__response--load"></span>
-            <span class=" terminal__response terminal__response--dots"></span>
-            <span class="terminal__response-result"></span>
+            <p>
+                Fl4wless's Personal Portfolio [Version 2.0.0]
+                <br>
+                (c) Fl4wless. All rights reserved.
+            </p>
+            <span class="terminal__cmd"></span>
+            <div class="terminal__response-wrapper">
+                <span class="terminal__response terminal__response--progress-bar"></span>
+                <span class="terminal__response terminal__response--result"></span>
+            </div>
         </div>
     </div>
-</div>
 
-<main>
-    <header class="hero__header">
-        <h3 class="hero__logo-name">Fl4wless</h3>
+    <main>
+        <header class="hero__header">
+            <h3 class="hero__logo-name">Fl4wless</h3>
 
-        <div class="hero__socials">
-            <a href="https://github.com/zFl4wless">
-                <ion-icon name="logo-github"></ion-icon>
-            </a>
-            <a href="https://instagram.com/fl4wless.dev">
-                <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-            <a href="https://twitter.com/zfl4wlessdev">
-                <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="section section--hero" id="home">
-        <div class="hero__title">
-            <h1 class="hero__heading">Fl<span class="special-letter">4</span>wless</h1>
-            <div class="hero__separator">
-                <span class="hero__separator-line"></span>
-                <span class="hero__separator-line"></span>
+            <div class="hero__socials">
+                <a href="https://github.com/zFl4wless">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://instagram.com/fl4wless.dev">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
             </div>
-            <h2 class="hero__description">student / developer</h2>
-        </div>
+        </header>
 
-        <div class="hero__tagcloud">
-            <span class="sphere" style="transition: unset; color: rgb(248, 248, 255);"></span>
-        </div>
-
-        <!-- Scroll Down Animation -->
-        <div class="mouse__scroll-down">
-            <span class="scroll-down__scroller"></span>
-        </div><!-- Scroll Down Animation End -->
-    </section><!-- Hero Section End -->
-
-    <!-- Project Section -->
-    <section class="section section--projects" id="projects">
-        <!-- Projects Search Bar -->
-        <div class="projects__search">
-            <input type="search" placeholder="Search for tags...">
-            <div class="icon__wrapper">
-                <ion-icon name="search"></ion-icon>
+        <!-- Hero Section -->
+        <section class="section section--hero" id="home">
+            <div class="hero__title">
+                <h1 class="hero__heading">Fl<span class="special-letter">4</span>wless</h1>
+                <div class="hero__separator">
+                    <span class="hero__separator-line"></span>
+                    <span class="hero__separator-line"></span>
+                </div>
+                <h2 class="hero__description">student / developer</h2>
             </div>
-        </div><!-- Projects Search Bar End -->
 
-        <!-- Projects Not Found -->
-        <div class="projects__not-found">
-            <h2 class="projects__not-found-title">No projects found</h2>
-            <p class="projects__not-found-description">
-                Please try to search for another tag.
-            </p>
-        </div><!-- Projects Not Found End -->
+            <div class="hero__tagcloud">
+                <span class="sphere" style="transition: unset; color: rgb(248, 248, 255);"></span>
+            </div>
 
-        <!-- Projects Album -->
-        <div class="projects__album">
-            <!-- Project Item -->
-            <a href="https://notovia.de">
-                <div class="projects__album-item">
-                    <!-- Project Card -->
-                    <div class="project__card"
-                         style="background-image: linear-gradient(rgba(32, 34, 37, 0.95), rgba(32, 34, 37, 0.95)),
+            <!-- Scroll Down Animation -->
+            <div class="mouse__scroll-down">
+                <span class="scroll-down__scroller"></span>
+            </div><!-- Scroll Down Animation End -->
+        </section><!-- Hero Section End -->
+
+        <!-- Project Section -->
+        <section class="section section--projects" id="projects">
+            <!-- Projects Search Bar -->
+            <div class="projects__search">
+                <input type="search" placeholder="Search for tags...">
+                <div class="icon__wrapper">
+                    <ion-icon name="search"></ion-icon>
+                </div>
+            </div><!-- Projects Search Bar End -->
+
+            <!-- Projects Not Found -->
+            <div class="projects__not-found">
+                <h2 class="projects__not-found-title">No projects found</h2>
+                <p class="projects__not-found-description">
+                    Please try to search for another tag.
+                </p>
+            </div><!-- Projects Not Found End -->
+
+            <!-- Projects Album -->
+            <div class="projects__album">
+                <!-- Project Item -->
+                <a href="https://notovia.de">
+                    <div class="projects__album-item">
+                        <!-- Project Card -->
+                        <div class="project__card" style="background-image: linear-gradient(rgba(32, 34, 37, 0.95), rgba(32, 34, 37, 0.95)),
                           url('https://cdn.notovia.de/Logo.svg');">
-                        <div class="project__card-content">
-                            <h2>Notovia Roleplay</h2>
-                            <div class="content-info">
-                        <span class="content-title">
-                            <ion-icon name="sunny-outline"></ion-icon>Share Moments
-                        </span>
-                                <span class="content-date">
-                            <ion-icon name="calendar-outline"></ion-icon>May 2021 - Present
-                        </span>
+                            <div class="project__card-content">
+                                <h2>Notovia Roleplay</h2>
+                                <div class="content-info">
+                                    <span class="content-title">
+                                        <ion-icon name="sunny-outline"></ion-icon>Share Moments
+                                    </span>
+                                    <span class="content-date">
+                                        <ion-icon name="calendar-outline"></ion-icon>May 2021 - Present
+                                    </span>
+                                </div>
+                                <p>A Minecraft server project where you can freely live out your own roleplay character.
+                                </p>
+                                <ul class="project__card-tags">
+                                    <li>Minecraft</li>
+                                    <li>Roleplay</li>
+                                    <li>Java</li>
+                                    <li>Paper</li>
+                                </ul>
                             </div>
-                            <p>A Minecraft server project where you can freely live out your own roleplay character.</p>
-                            <ul class="project__card-tags">
-                                <li>Minecraft</li>
-                                <li>Roleplay</li>
-                                <li>Java</li>
-                                <li>Paper</li>
-                            </ul>
-                        </div>
-                    </div><!-- Project Card End -->
-                </div>
-            </a><!-- Project Item End -->
+                        </div><!-- Project Card End -->
+                    </div>
+                </a><!-- Project Item End -->
 
-            <!-- Project Item -->
-            <a href="https://elominers-germany.de">
-                <div class="projects__album-item">
-                    <!-- Project Card -->
-                    <div class="project__card"
-                         style="background-image: linear-gradient(rgba(32, 34, 37, 0.95), rgba(32, 34, 37, 0.95)),
+                <!-- Project Item -->
+                <a href="https://elominers-germany.de">
+                    <div class="projects__album-item">
+                        <!-- Project Card -->
+                        <div class="project__card" style="background-image: linear-gradient(rgba(32, 34, 37, 0.95), rgba(32, 34, 37, 0.95)),
                           url('assets/img/project-thumbnails/elominers-germany.png');">
-                        <div class="project__card-content">
-                            <h2>Elominers Germany</h2>
-                            <div class="content-info">
-                        <span class="content-title">
-                            <ion-icon name="sunny-outline"></ion-icon>Welcome to the mine
-                        </span>
-                                <span class="content-date">
-                            <ion-icon name="calendar-outline"></ion-icon>Nov 2020 - Present
-                        </span>
+                            <div class="project__card-content">
+                                <h2>Elominers Germany</h2>
+                                <div class="content-info">
+                                    <span class="content-title">
+                                        <ion-icon name="sunny-outline"></ion-icon>Welcome to the mine
+                                    </span>
+                                    <span class="content-date">
+                                        <ion-icon name="calendar-outline"></ion-icon>Nov 2020 - Present
+                                    </span>
+                                </div>
+                                <p>A German e-sport team in the field of games CS:GO and League of Legends and more</p>
+                                <ul class="project__card-tags">
+                                    <li>Esport</li>
+                                    <li>Gaming</li>
+                                    <li>Clan</li>
+                                </ul>
                             </div>
-                            <p>A German e-sport team in the field of games CS:GO and League of Legends and more</p>
-                            <ul class="project__card-tags">
-                                <li>Esport</li>
-                                <li>Gaming</li>
-                                <li>Clan</li>
-                            </ul>
-                        </div>
-                    </div><!-- Project Card End -->
-                </div>
-            </a><!-- Project Item End -->
-        </div><!-- Projects Album End -->
-    </section><!-- Project Section End -->
+                        </div><!-- Project Card End -->
+                    </div>
+                </a><!-- Project Item End -->
+            </div><!-- Projects Album End -->
+        </section><!-- Project Section End -->
 
-    <footer class="footer">
-        <p>Copyright &copy; <span class="current-year"></span> All Rights Reserved by Fl4wless</p>
-        <a href="/imprint" target="_blank">Impressum</a>
-    </footer>
-</main>
+        <footer class="footer">
+            <p>Copyright &copy; <span class="current-year">
+                    <script>document.write(new Date().getFullYear())</script>
+                </span> All Rights Reserved by Fl4wless</p>
+            <a href="/imprint" target="_blank">Impressum</a>
+        </footer>
+    </main>
 
-<!-- Rotating Text Sphere -->
-<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
-<script src="assets/js/tagcloud.js"></script>
+    <!-- Rotating Text Sphere -->
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+    <script src="assets/js/tagcloud.js"></script>
 
-<!-- Ionicons Icons -->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Ionicons Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<!-- Other Scripts -->
-<script src="assets/js/main.js"></script>
+    <!-- Other Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/page-loader.js"></script>
 </body>
+
 </html>
