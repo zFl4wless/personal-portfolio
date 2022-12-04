@@ -1,0 +1,45 @@
+@use '../abstracts/variables';
+
+.loader {
+  position: fixed;
+  background: variables.$clr-dark;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+
+  .terminal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background: #111;
+    width: 100%;
+    height: 100%;
+    padding: .6em;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    font-family: variables.$ff-code;
+    font-weight: lighter;
+    font-size: .8rem;
+    overflow-x: auto;
+
+    p {
+      margin: .4em 0 2em;
+    }
+
+    .terminal__cmd::before {
+      content: 'root@fl4wless.de ~ $';
+      color: white;
+      padding-right: .5em;
+    }
+
+    .terminal__response-wrapper {
+      margin-top: .5em;
+
+      .terminal__response {
+        color: variables.$clr-warning;
+        text-shadow: 0 0 4px variables.$clr-warning;
+        letter-spacing: 4px;
+      }
+    }
+  }
+}
