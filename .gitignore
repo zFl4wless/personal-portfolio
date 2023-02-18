@@ -1,0 +1,5 @@
+# Node Modules
+node_modules
+
+# Svelte Kit
+.svelte-kit
