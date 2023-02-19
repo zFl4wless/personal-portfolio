@@ -35,5 +35,8 @@
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"TagCloud": "^2.3.2"
+	}
 }
