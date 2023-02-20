@@ -58,7 +58,9 @@
 
 <style>
     .hero-section {
-        background-image: radial-gradient(ellipse at center, #273041 0%, #202225 65%);
+        background-image: url('background.png');
+        background-position: center;
+        background-repeat: no-repeat;
         grid-template-rows: min-content auto;
     }
 </style>

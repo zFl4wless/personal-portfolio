@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 ::selection {
-  @apply bg-primary-400
+    @apply bg-primary-400;
 }
