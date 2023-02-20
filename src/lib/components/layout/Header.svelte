@@ -1,4 +1,4 @@
-<header class="flex justify-between items-center px-6 py-3">
+<header class="flex justify-between items-center py-3">
     <img src="img/Logo.png" alt="Logo" width={110} />
     <div class="flex items-center gap-4">
         <a href="https://github.com/zFl4wless">
