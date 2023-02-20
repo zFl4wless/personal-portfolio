@@ -3,6 +3,7 @@
     import '../app.css';
     import TagCloud from 'TagCloud';
     import { onMount } from 'svelte';
+    import ShootingStar from '$lib/components/animations/ShootingStar.svelte';
 
     onMount(() =>
         TagCloud(
@@ -25,13 +26,20 @@
 <main>
     <!-- Hero Section -->
     <section class="hero-section grid min-h-screen px-6">
+        <!-- Shooting Stars -->
+        <ShootingStar />
+        <ShootingStar />
+        <ShootingStar />
+
         <!-- Header -->
         <Header />
 
         <!-- Hero Section Content -->
         <div class="flex flex-col xl:flex-row items-center justify-center gap-14">
             <div>
-                <h1 class="text-7xl font-bold text-center xl:text-left">Hi, I'm <span class="text-primary-500">Noah</span>!</h1>
+                <h1 class="text-7xl font-bold text-center xl:text-left">
+                    Hi, I'm <span class="text-primary-500">Noah</span>!
+                </h1>
                 <div
                     class="mx-auto xl:mx-0 relative my-10 w-60 h-6 before:content-[''] before:block before:absolute before:w-40 before:h-1.5 before:bg-primary-400 before:rounded-full after:content-[''] after:block after:absolute after:w-40 after:h-1.5 after:bg-primary-400 after:rounded-full after:bottom-0 after:right-0"
                 />
