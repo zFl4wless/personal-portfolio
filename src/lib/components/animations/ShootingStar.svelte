@@ -11,7 +11,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        width: 300px;
+        width: 200px;
         height: 1px;
         background: linear-gradient(90deg, rgb(225 228 230), transparent);
     }
@@ -19,10 +19,10 @@
         0% {
             transform: rotate(315deg) translateX(0);
         }
-        20% {
+        5% {
             opacity: 1;
         }
-        30% {
+        10% {
             transform: rotate(315deg) translateX(-600px);
             opacity: 0;
         }
