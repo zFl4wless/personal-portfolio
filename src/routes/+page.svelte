@@ -25,7 +25,7 @@
 
 <main>
     <!-- Hero Section -->
-    <section class="hero-section bg-[url('../background.png')] bg-center bg-no-repeat grid min-h-screen px-6">
+    <section class="hero-section bg-center bg-no-repeat grid min-h-screen px-6">
         <!-- Shooting Stars -->
         <ShootingStar />
         <ShootingStar />
@@ -59,5 +59,6 @@
 <style>
     .hero-section {
         grid-template-rows: min-content auto;
+        background-image: url('background.png');
     }
 </style>
