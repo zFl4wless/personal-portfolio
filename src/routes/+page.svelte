@@ -59,6 +59,6 @@
 <style>
     .hero-section {
         grid-template-rows: min-content auto;
-        background-image: url('background.png');
+        background-image: url('./background.png');
     }
 </style>
