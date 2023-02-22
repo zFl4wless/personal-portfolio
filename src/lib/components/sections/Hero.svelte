@@ -38,14 +38,14 @@
     <!-- Hero Section Content -->
     <div class="flex flex-col xl:flex-row items-center justify-center gap-14 2xl:gap-24">
         <div>
-            <h1 class="text-7xl font-bold text-center xl:text-left">
-                Hi, I'm <span class="text-primary-500">Noah</span>!
+            <h1 class="text-7xl font-bold text-center xl:text-left tracking-wide">
+                Hi, I'm <span class="glowing-text text-primary-400">Noah</span>!
             </h1>
             <div
                 class="mx-auto xl:mx-0 relative my-10 w-60 h-6 before:content-[''] before:block before:absolute before:w-40 before:h-1.5 before:bg-primary-400 before:rounded-full after:content-[''] after:block after:absolute after:w-40 after:h-1.5 after:bg-primary-400 after:rounded-full after:bottom-0 after:right-0"
             />
             <p
-                class="text-2xl text-center xl:text-left before:animate-pulse before:content-['['] before:mr-2 before:text-3xl before:text-primary-500 after:animate-pulse after:content-[']'] after:ml-2 after:text-3xl after:text-primary-500"
+                class="text-2xl text-center xl:text-left before:animate-pulse {"before:content-['{']"} before:mr-2 before:text-3xl before:text-primary-500 after:animate-pulse {"after:content-['}']"} after:ml-2 after:text-3xl after:text-primary-500"
             >
                 student / developer
             </p>
@@ -61,5 +61,8 @@
 <style>
     .hero-section {
         grid-template-rows: min-content auto;
+    }
+    .glowing-text {
+        text-shadow: 0 0 12px theme('colors.primary.500');
     }
 </style>
