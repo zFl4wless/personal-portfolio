@@ -25,7 +25,7 @@
 
 <main>
     <!-- Hero Section -->
-    <section class="hero-section bg-center bg-no-repeat grid min-h-screen px-6">
+    <section class="hero-section relative bg-[url('/background.png')] bg-center bg-no-repeat grid min-h-screen px-6">
         <!-- Shooting Stars -->
         <ShootingStar />
         <ShootingStar />
@@ -35,7 +35,7 @@
         <Header />
 
         <!-- Hero Section Content -->
-        <div class="flex flex-col xl:flex-row items-center justify-center gap-14">
+        <div class="flex flex-col xl:flex-row items-center justify-center gap-14 2xl:gap-24">
             <div>
                 <h1 class="text-7xl font-bold text-center xl:text-left">
                     Hi, I'm <span class="text-primary-500">Noah</span>!
@@ -52,13 +52,32 @@
             <div class="hidden xl:block tag-cloud" />
         </div>
 
-        <!-- TODO: Mouse Scroll Icon -->
+        <!-- Scroll Down Icon -->
+        <div
+            class="scroll-down-icon absolute bottom-4 left-1/2 -translate-x-1/2 w-6 h-12 outline outline-neutral-500 rounded-full before:content-[''] before:absolute before:top-2 before:left-1/2 before:-translate-x-1/2 before:w-1 before:h-3 before:bg-neutral-500 before:rounded-full"
+        />
     </section>
 </main>
 
 <style>
     .hero-section {
         grid-template-rows: min-content auto;
-        background-image: url('/background.png');
+    }
+    .scroll-down-icon::before {
+        animation: scroll-down 2s infinite;
+    }
+    @keyframes scroll-down {
+        20% {
+            transform: translate(-50%, 0);
+            opacity: 1;
+        }
+        70% {
+            transform: translate(-50%, 6px);
+            opacity: 0;
+        }
+        100% {
+            opacity: 0;
+            transform: translate(-50%, 0);
+        }
     }
 </style>
