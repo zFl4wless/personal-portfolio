@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import ShootingStar from '$lib/components/animations/ShootingStar.svelte';
     import Header from '$lib/components/layout/Header.svelte';
     import TagCloud from 'TagCloud';
