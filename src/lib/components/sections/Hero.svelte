@@ -22,7 +22,7 @@
 </script>
 
 <section
-    class="hero-section relative bg-[url('/background.png')] bg-center bg-no-repeat bg-cover grid min-h-screen px-6 overflow-hidden"
+    class="hero-section relative bg-neutral-900 bg-[url('/img/Background.png')] bg-center bg-no-repeat bg-cover grid min-h-screen px-6 overflow-hidden"
 >
     <!-- Stars -->
     <Stars />
