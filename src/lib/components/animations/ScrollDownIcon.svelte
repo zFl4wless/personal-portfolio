@@ -15,8 +15,12 @@
             transform: translate(-50%, 6px);
             opacity: 0;
         }
-        100% {
+        90% {
             opacity: 0;
+            transform: translate(-50%, 0);
+        }
+        100% {
+            opacity: 1;
             transform: translate(-50%, 0);
         }
     }
