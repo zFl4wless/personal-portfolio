@@ -1,10 +1,7 @@
 <script>
-    import ShootingStar from '$lib/components/animations/ShootingStar.svelte';
-    import Header from '$lib/components/layout/Header.svelte';
     import TagCloud from 'TagCloud';
     import { onMount } from 'svelte';
-    import ScrollDownIcon from '$lib/components/animations/ScrollDownIcon.svelte';
-    import Stars from '$lib/components/animations/Stars.svelte';
+    import { Header, ScrollDownIcon, ShootingStar, Stars } from '$lib';
 
     onMount(() => {
         TagCloud(
@@ -59,9 +56,7 @@
     <!-- Scroll Down Icon -->
     <ScrollDownIcon />
 </section>
-<section
-    class="min-h-screen px-6"
-/>
+<section class="min-h-screen px-6" />
 
 <style>
     .hero-section {
