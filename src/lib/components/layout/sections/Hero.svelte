@@ -3,6 +3,7 @@
     import Header from '$lib/components/layout/Header.svelte';
     import TagCloud from 'TagCloud';
     import { onMount } from 'svelte';
+    import ScrollDownIcon from '$lib/components/animations/ScrollDownIcon.svelte';
 
     onMount(() =>
         TagCloud(
@@ -50,30 +51,11 @@
     </div>
 
     <!-- Scroll Down Icon -->
-    <div
-        class="scroll-down-icon absolute bottom-4 left-1/2 -translate-x-1/2 w-6 h-12 outline outline-neutral-500 rounded-full before:content-[''] before:absolute before:top-2 before:left-1/2 before:-translate-x-1/2 before:w-1 before:h-3 before:bg-neutral-500 before:rounded-full"
-    />
+    <ScrollDownIcon />
 </section>
 
 <style>
     .hero-section {
         grid-template-rows: min-content auto;
-    }
-    .scroll-down-icon::before {
-        animation: scroll-down 2s infinite;
-    }
-    @keyframes scroll-down {
-        20% {
-            transform: translate(-50%, 0);
-            opacity: 1;
-        }
-        70% {
-            transform: translate(-50%, 6px);
-            opacity: 0;
-        }
-        100% {
-            opacity: 0;
-            transform: translate(-50%, 0);
-        }
     }
 </style>
