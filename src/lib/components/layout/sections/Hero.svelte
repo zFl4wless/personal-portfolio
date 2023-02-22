@@ -1,11 +1,12 @@
-<script>
+<script lang="ts">
     import ShootingStar from '$lib/components/animations/ShootingStar.svelte';
     import Header from '$lib/components/layout/Header.svelte';
     import TagCloud from 'TagCloud';
     import { onMount } from 'svelte';
     import ScrollDownIcon from '$lib/components/animations/ScrollDownIcon.svelte';
+    import Stars from '$lib/components/animations/Stars.svelte';
 
-    onMount(() =>
+    onMount(() => {
         TagCloud(
             // @ts-ignore-next-line
             '.tag-cloud',
@@ -19,11 +20,16 @@
                 useContainerInlineStyles: true,
                 useItemInlineStyles: true,
             },
-        ),
-    );
+        );
+    });
 </script>
 
-<section class="hero-section relative bg-[url('/background.png')] bg-center bg-no-repeat grid min-h-screen px-6">
+<section
+    class="hero-section relative bg-[url('/background.png')] bg-center bg-no-repeat grid min-h-screen px-6 overflow-hidden"
+>
+    <!-- Stars -->
+    <Stars />
+
     <!-- Shooting Stars -->
     <ShootingStar />
     <ShootingStar />
@@ -53,6 +59,9 @@
     <!-- Scroll Down Icon -->
     <ScrollDownIcon />
 </section>
+<section
+    class="min-h-screen px-6"
+/>
 
 <style>
     .hero-section {
