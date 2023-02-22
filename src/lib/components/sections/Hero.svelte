@@ -7,7 +7,18 @@
         TagCloud(
             // @ts-ignore-next-line
             '.tag-cloud',
-            ['TypeScript', 'Figma', 'JavaScript', 'TailwindCSS', 'ReactJS', 'PostgreSQL', 'CSS', 'HTML', 'MySQL'],
+            [
+                'TypeScript',
+                'Figma',
+                'JavaScript',
+                'TailwindCSS',
+                'ReactJS',
+                'PostgreSQL',
+                'CSS',
+                'HTML',
+                'MySQL',
+                'Git',
+            ],
             {
                 radius: 320,
                 maxSpeed: 'normal',
