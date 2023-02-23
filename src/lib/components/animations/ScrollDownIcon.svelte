@@ -1,13 +1,16 @@
 <script>
+    import { onMount } from 'svelte';
     import { fade } from 'svelte/transition';
 
     let scrollDownIcon = true;
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 0) {
-            scrollDownIcon = false;
-        } else {
-            scrollDownIcon = true;
-        }
+    onMount(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                scrollDownIcon = false;
+            } else {
+                scrollDownIcon = true;
+            }
+        });
     });
 </script>
 
