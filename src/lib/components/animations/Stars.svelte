@@ -3,16 +3,24 @@
 
     let boxShadows = '';
     onMount(() => {
-        for (let i = 2; i < 120; i++) {
-            const boxShadow = `${Math.round(Math.random() * window.innerWidth)}px ${Math.round(
-                Math.random() * 2000,
-            )}px #FFF`;
-            if (boxShadows.length > 0) {
-                boxShadows += `, ${boxShadow}`;
-            } else {
-                boxShadows += `${boxShadow}`;
+        function calculateBoxShadows() {
+            for (let i = 2; i < 120; i++) {
+                const boxShadow = `${Math.round(Math.random() * window.innerWidth)}px ${Math.round(
+                    Math.random() * 2000,
+                )}px #FFF`;
+                if (boxShadows.length > 0) {
+                    boxShadows += `, ${boxShadow}`;
+                } else {
+                    boxShadows += `${boxShadow}`;
+                }
             }
         }
+        calculateBoxShadows();
+
+        window.addEventListener('resize', () => {
+            boxShadows = '';
+            calculateBoxShadows();
+        });
     });
 </script>
 
