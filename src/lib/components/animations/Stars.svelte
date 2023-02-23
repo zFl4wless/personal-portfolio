@@ -4,8 +4,8 @@
     let boxShadows = '';
     onMount(() => {
         for (let i = 2; i < 120; i++) {
-            const boxShadow = `${Math.round(Math.random() * window.innerWidth)}px ${Math.round(
-                Math.random() * window.innerWidth,
+            const boxShadow = `${Math.round(Math.random() * window.innerHeight)}px ${Math.round(
+                Math.random() * window.innerHeight,
             )}px #FFF`;
             if (boxShadows.length > 0) {
                 boxShadows += `, ${boxShadow}`;
