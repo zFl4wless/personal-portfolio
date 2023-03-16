@@ -1,6 +1,5 @@
 // Animations
 export { default as ScrollDownIcon } from '$lib/components/animations/ScrollDownIcon.svelte';
-export { default as ShootingStar } from '$lib/components/animations/ShootingStar.svelte';
 export { default as Stars } from '$lib/components/animations/Stars.svelte';
 
 // Layout

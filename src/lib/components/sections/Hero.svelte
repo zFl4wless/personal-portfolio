@@ -1,7 +1,7 @@
 <script>
     import TagCloud from 'TagCloud';
     import { onMount } from 'svelte';
-    import { Header, ScrollDownIcon, ShootingStar, Stars } from '$lib';
+    import { Header, ScrollDownIcon, Stars } from '$lib';
 
     onMount(() => {
         TagCloud(
