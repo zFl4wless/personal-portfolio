@@ -62,7 +62,6 @@
     <!-- Scroll Down Icon -->
     <ScrollDownIcon />
 </section>
-<section class="min-h-screen px-6" />
 
 <style>
     .hero-section {
