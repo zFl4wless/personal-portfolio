@@ -38,11 +38,6 @@
     <!-- Stars -->
     <Stars />
 
-    <!-- Shooting Stars -->
-    <ShootingStar />
-    <ShootingStar />
-    <ShootingStar />
-
     <!-- Header -->
     <Header />
 
@@ -50,7 +45,7 @@
     <div class="flex flex-col xl:flex-row items-center justify-center gap-14 2xl:gap-24">
         <div>
             <h1 class="text-7xl font-bold text-center xl:text-left tracking-wide">
-                Hi, I'm <span class="glowing-text text-transparent">Noah</span>!
+                Hi, I'm <span class="text-primary-500">Noah</span>!
             </h1>
             <div
                 class="mx-auto xl:mx-0 relative my-10 w-60 h-6 before:content-[''] before:block before:absolute before:w-40 before:h-1.5 before:bg-primary-400 before:rounded-full after:content-[''] after:block after:absolute after:w-40 after:h-1.5 after:bg-primary-400 after:rounded-full after:bottom-0 after:right-0"
@@ -72,11 +67,5 @@
 <style>
     .hero-section {
         grid-template-rows: min-content auto;
-    }
-    .glowing-text {
-        -webkit-text-stroke: theme('colors.neutral.100');
-        -webkit-text-stroke-width: 2px;
-        text-shadow: 2px 2px 15px theme('colors.primary.500');
-        animation: flickering-glow 2s ease-in-out infinite alternate;
     }
 </style>
