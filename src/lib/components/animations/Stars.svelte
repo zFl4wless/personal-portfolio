@@ -2,22 +2,29 @@
     import { onMount } from 'svelte';
 
     let boxShadows = '';
-    onMount(() => {
-        function calculateBoxShadows() {
-            for (let i = 2; i < 120; i++) {
-                const boxShadow = `${Math.round(Math.random() * window.innerWidth)}px ${Math.round(
-                    Math.random() * 2000,
-                )}px #FFF`;
-                if (boxShadows.length > 0) {
-                    boxShadows += `, ${boxShadow}`;
-                } else {
-                    boxShadows += `${boxShadow}`;
-                }
+    function calculateBoxShadows() {
+        for (let i = 2; i < 120; i++) {
+            const boxShadow = `${Math.round(Math.random() * window.innerWidth)}px ${Math.round(
+                Math.random() * 2000,
+            )}px #FFF`;
+            if (boxShadows.length > 0) {
+                boxShadows += `, ${boxShadow}`;
+            } else {
+                boxShadows += `${boxShadow}`;
             }
         }
+    }
+
+    onMount(() => {
         calculateBoxShadows();
 
+        let windowWidth = window.innerWidth;
         window.addEventListener('resize', () => {
+            if (windowWidth === window.innerWidth) {
+                return;
+            }
+            windowWidth = window.innerWidth;
+
             boxShadows = '';
             calculateBoxShadows();
         });

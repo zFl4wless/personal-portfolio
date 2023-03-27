@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-::selection {
-    @apply bg-primary-400;
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: local('Open Sans'), local('OpenSans'), local('Open Sans Light'), url('fonts/opensans.woff2') format('woff2'),
+        url('fonts/opensans.woff') format('woff');
+}
+
+@layer base {
+    ::selection {
+        @apply bg-primary-400 text-neutral-100;
+    }
+
+    body {
+        @apply font-open-sans;
+    }
+
+    mark {
+        @apply bg-transparent text-primary-400;
+    }
 }

@@ -30,7 +30,7 @@ module.exports = {
                 },
             },
             fontFamily: {
-                'open-sans': ['Open Sans', 'sans-serif'],
+                "open-sans": ['Open Sans', 'sans-serif'],
             },
         },
     },

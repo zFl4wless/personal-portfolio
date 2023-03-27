@@ -1,55 +1,37 @@
 <script>
-    import { Calendar } from 'lucide-svelte';
-
-    const projectsData = [
-        {
-            title: 'Hondicard',
-            description:
-                'A collaborative learning plattform. If you are a fan of a card-based learning system, Hondicard is perfectly made for you. You can also share your cards with your friends.',
-            date: 'Aug 2022',
-            tags: ['TypeScript', 'ReactJS', 'TailwindCSS', 'Metahond'],
-            link: 'https://hondicard.metahond.codes',
-            image: '/img/projects/hondicard.png',
-        },
-        {
-            title: 'R6 Cards',
-            description:
-                'A showcase project that lists all operators with further information from the game Rainbow Six Siege. I thought it would be a fun thing to do.',
-            date: 'Feb 2023',
-            tags: ['TypeScript', 'Svelte', 'TailwindCSS', 'Rainbow Six Siege', 'Fun'],
-            link: 'https://r6-cards.vercel.app/',
-            image: '/img/projects/r6-cards.png',
-        },
-    ];
+    import ProjectItem from '../projects/ProjectItem.svelte';
+    import projects from '../../data/projects';
 </script>
 
-<section class="min-h-screen px-60 py-16">
-    <h2 class="text-center text-4xl font-bold tracking-wide mb-20">Projects</h2>
+<section id="projects-section" class="min-h-screen px-10 xl:px-10 2xl:px-60 py-10">
+    <h2
+        class="mb-16 text-4xl font-bold text-center tracking-wide before:animate-pulse {"before:content-['[']"} before:mr-2 before:text-3xl before:text-primary-500 after:animate-pulse {"after:content-[']']"} after:ml-2 after:text-3xl after:text-primary-500"
+    >
+        Projects
+    </h2>
 
-    <div class="flex flex-col gap-20">
-        {#each projectsData as project}
-            <div class="grid grid-cols-2 gap-20">
-                <div>
-                    <p class="text-2xl font-semibold mb-2">{project.title}</p>
-                    <span class="inline-flex items-center gap-2 text-xs font-semibold bg-neutral-700 rounded-md px-3 py-1.5 mb-6">
-                        <Calendar size={14} />
-                        {project.date}</span
-                    >
-                    <p class="mb-4">{project.description}</p>
-                    <ul class="flex flex-wrap gap-2">
-                        {#each project.tags as tag}
-                            <li
-                                class="flex-grow bg-neutral-700 text-xs font-semibold text-center uppercase rounded-md py-1.5"
-                            >
-                                {tag}
-                            </li>
-                        {/each}
-                    </ul>
-                </div>
-                <div>
-                    <img src={project.image} alt={project.title} />
-                </div>
-            </div>
-        {/each}
+    <div class="flex flex-col gap-48">
+        <ProjectItem project={projects[0]} index={0}>
+            A <mark>collaborative learning plattform</mark>. If you are a fan of a card-based learning system, Hondicard
+            is perfectly made for you. You can also share your cards with your friends.<br /><br />The inspiration for
+            this project emerged during a brainstorming session with
+            <a
+                href="https://github.com/zflxw"
+                class="underline text-primary-400 hover:brightness-110 transition ease-in-out">a friend</a
+            >, as we contemplated how we could enhance our learning experience through collaborative flashcards. We
+            realized that <mark>sharing flashcards</mark> could not only reduce our workload, but also add an element of
+            enjoyment, particularly with the aid of a high-quality app. Hence, we decided to bring this concept to life by
+            developing our own application.
+        </ProjectItem>
+        <ProjectItem project={projects[1]} index={1}>
+            A showcase project that <mark>lists all operators</mark> with further information from the game
+            <mark>Rainbow Six Siege</mark>.
+            <br /><br />
+            I saw other websites on the internet with the PokeAPI that lists every Pokemon, so I thought it would be
+            <mark>fun to do</mark>
+            something similar with Rainbow Six Siege operators, since I also played this game for a while. Sadly, there
+            is not an API for Rainbow Six Siege or their operators. Maybe I will create one in the future. I also wanted
+            to try out <mark>SvelteKit for the first time</mark>.
+        </ProjectItem>
     </div>
 </section>

@@ -16,9 +16,17 @@
 </script>
 
 {#if scrollDownIcon}
-    <div class="scroll-down-icon absolute bottom-4 left-1/2 -translate-x-1/2" transition:fade={{ duration: 200 }}>
+    <button
+        on:click={() => {
+            document.getElementById('projects-section')?.scrollIntoView({
+                behavior: 'smooth',
+            });
+        }}
+        class="block scroll-down-icon absolute bottom-4 left-1/2 -translate-x-1/2"
+        transition:fade={{ duration: 200 }}
+    >
         <ChevronsDown size={32} class="text-neutral-200" />
-    </div>
+    </button>
 {/if}
 
 <style>
