@@ -7,6 +7,7 @@ export { default as Header } from '$lib/components/layout/Header.svelte';
 
 // Sections
 export { default as Hero } from '$lib/components/sections/Hero.svelte';
+export { default as About } from '$lib/components/sections/About.svelte';
 export { default as Projects } from '$lib/components/sections/Projects.svelte';
 
 // Projects
