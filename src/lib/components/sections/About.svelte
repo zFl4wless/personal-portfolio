@@ -4,4 +4,15 @@
     >
         That's me
     </h2>
+
+    <div class="grid grid-cols-2 justify-center items-center gap-20">
+        <p class="text-justify">
+            fj sd ffshdh fhusd jfj hjshd jhfhj sdhj fhjshdj fhkj jdjfhjdhjfjdh fjh jhjh djfhhjfj hjshd jhfhj sdhj
+            fhjshdj fhkj jdjfhjdhjfjdh fjh jhjh djfhhjfj hjshd jhfhj sdhj fhjshdj fhkj jdjfhjdhjfjdh fjh jhjh djfhhjfj
+            hjshd jhfhj sdhj fhjshdj fhkj jdjfhjdhjfjdh fjh jhjh djfhhjfj hjshd jhfhj sdhj fhjshdj fhkj jdjfhjdhjfjdh
+            fjh jhjh djfhhjfj hjshd jhfhj sdhj fhjshdj fhkj jdjfhjdhjfjdh fjh jhjh djfhhjfj hjshd jhfhj sdhj fhjshdj
+            fhkj jdjfhjdhjfjdh fjh jhjh djfhhjfj hjshd jhfhj sdhj fhjshdj fhkj jdjfhjdhjfjdh fjh jhjh djfhh
+        </p>
+        <img class="h-4/6 aspect-square outline outline-primary-500 rounded-lg shadow-lg" src="img/Avatar.png" alt="Noah's Avatar" />
+    </div>
 </section>
