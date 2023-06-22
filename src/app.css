@@ -5,7 +5,7 @@
 @font-face {
     font-family: 'Open Sans', sans-serif;
     src: local('Open Sans'), local('OpenSans'), local('Open Sans Light'), url('fonts/opensans.woff2') format('woff2'),
-        url('fonts/opensans.woff') format('woff');
+    url('fonts/opensans.woff') format('woff');
 }
 
 @layer base {
@@ -14,10 +14,14 @@
     }
 
     body {
-        @apply font-open-sans;
+        @apply font-open-sans text-[1.1rem];
     }
 
     mark {
         @apply bg-transparent text-primary-400;
+    }
+
+    a {
+        @apply underline text-primary-400 hover:brightness-110 transition ease-in-out;
     }
 }

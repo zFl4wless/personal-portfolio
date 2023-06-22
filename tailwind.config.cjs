@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: ['./src/**/*.{html,js,svelte,ts}'],
@@ -29,10 +31,24 @@ module.exports = {
                     900: '#202225',
                 },
             },
+            dropShadow: {
+                image: '0 0 15px theme("colors.primary.500")',
+            },
             fontFamily: {
-                "open-sans": ['Open Sans', 'sans-serif'],
+                'open-sans': ['Open Sans', 'sans-serif'],
             },
         },
     },
-    plugins: [],
+    plugins: [
+        plugin(function({ matchUtilities, theme }) {
+            matchUtilities(
+                {
+                    'text-shadow': (value) => ({
+                        textShadow: value,
+                    }),
+                },
+                { values: theme('textShadow') },
+            );
+        }),
+    ],
 };
