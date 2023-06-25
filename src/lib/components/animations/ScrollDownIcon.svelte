@@ -3,14 +3,11 @@
     import { fade } from 'svelte/transition';
     import { ChevronsDown } from 'lucide-svelte';
 
-    let scrollDownIcon = true;
+    let scrollDownIcon = false;
     onMount(() => {
+        scrollDownIcon = window.scrollY <= 0;
         window.addEventListener('scroll', () => {
-            if (window.scrollY > 0) {
-                scrollDownIcon = false;
-            } else {
-                scrollDownIcon = true;
-            }
+            scrollDownIcon = window.scrollY <= 0;
         });
     });
 </script>
