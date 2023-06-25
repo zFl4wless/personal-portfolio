@@ -10,7 +10,7 @@
         Projects
     </h2>
 
-    <div class='flex flex-col gap-48'>
+    <div class='flex flex-col gap-20'>
         <ProjectItem project={projects[0]} index={0}>
             A
             <mark>collaborative learning plattform</mark>
