@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { onMount } from 'svelte';
 
     let boxShadows = '';
@@ -31,7 +31,7 @@
     });
 </script>
 
-<div class="stars" style="--box-shadows: {boxShadows}" />
+<div class="stars" style="--box-shadows: {boxShadows}"></div>
 
 <style>
     .stars {

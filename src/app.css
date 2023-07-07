@@ -14,7 +14,7 @@
     }
 
     body {
-        @apply font-open-sans text-[1.1rem];
+        @apply font-open-sans text-neutral-100 text-[1.1rem];
     }
 
     mark {
