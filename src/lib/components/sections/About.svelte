@@ -9,7 +9,7 @@
         Who am I
     </h2>
 
-    <div class='grid grid-cols-[auto_auto] justify-center items-center gap-20'>
+    <div class='grid lg:grid-cols-[auto_auto] justify-center items-center gap-20'>
         <div>
             <p>
                 As a developer, my coding journey began in
@@ -50,14 +50,14 @@
                 </ul>
             </div>
         </div>
-        <img class='h-80 aspect-square rounded-full border border-neutral-700 m-10' src='img/fl4wless.svg'
+        <img class='hidden lg:block h-80 aspect-square rounded-full border border-neutral-700 m-10' src='img/fl4wless.svg'
              alt="Noah's Avatar" />
     </div>
 
     <div class='mt-10'>
         <h3 class='font-koulen text-2xl'>I like</h3>
 
-        <ul class='flex justify-around p-5'>
+        <ul class='flex flex-wrap justify-around gap-5 p-5'>
             <li class='flex items-center gap-3 bg-neutral-800 px-10 rounded-lg py-2'>
                 <Code2 class='text-primary-500' />
                 <span>Coding</span>
