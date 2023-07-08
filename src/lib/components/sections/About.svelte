@@ -44,7 +44,7 @@
                     <li class='flex items-center gap-3'>
                         <Globe />
                         <span>
-                            <a href='https://typescriptlang.org'>Typescript</a>, HTML, CSS
+                            <a href='https://typescriptlang.org'>TypeScript</a>, HTML, CSS
                         </span>
                     </li>
                 </ul>
