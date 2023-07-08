@@ -9,7 +9,7 @@
     ];
 </script>
 
-<footer class='flex justify-between px-8 py-4 text-base'>
+<footer class='flex justify-between px-6 py-4 text-base'>
     <span class='text-neutral-300'>
         {messages[Math.floor(Math.random() * messages.length)]}
     </span>

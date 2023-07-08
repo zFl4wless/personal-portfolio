@@ -19,7 +19,7 @@
             <Calendar size={14} />
             {project.date}
         </span>
-        <p class='mb-4'>
+        <p class='text-justify mb-4'>
             <slot />
         </p>
         <ul class='flex flex-wrap gap-1.5'>

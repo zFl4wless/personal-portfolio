@@ -1,4 +1,4 @@
-<header class="flex justify-between items-center py-3">
+<header class="flex justify-between items-center py-4">
     <span class='font-koulen text-2xl font-thin text-neutral-100 cursor-default'>Fl4wless</span>
     <div class="flex items-center gap-6">
         <a class="transition ease-in-out hover:opacity-75 cursor-pointer" href="https://github.com/zFl4wless">
