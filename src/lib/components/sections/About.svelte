@@ -1,26 +1,79 @@
-<section id='projects-section' class='min-h-screen px-10 xl:px-10 2xl:px-60 py-10'>
+<script lang='ts'>
+    import { User, MapPin, Cpu, Globe, Code2, Bike, Joystick, Music } from 'lucide-svelte';
+</script>
+
+<section id='projects-section' class='min-h-screen flex flex-col justify-center px-10 xl:px-10 2xl:px-60 py-10'>
     <h2
-        class="mb-16 text-4xl font-bold text-center tracking-wide before:animate-pulse before:content-['['] before:mr-2 before:text-3xl before:text-primary-500 after:animate-pulse after:content-[']'] after:ml-2 after:text-3xl after:text-primary-500"
+        class="mb-16 text-4xl font-koulen font-bold text-center tracking-wide before:animate-pulse before:content-['[']  before:mr-3 before:text-4xl before:text-primary-500 after:animate-pulse after:content-[']'] after:ml-3 after:text-4xl after:text-primary-500"
     >
-        That's me
+        Who am I
     </h2>
 
     <div class='grid grid-cols-[auto_auto] justify-center items-center gap-20'>
-        <p>
-            My name is Noah and I am a 16 year old high school student from <a
-            href='https://en.wikipedia.org/wiki/Oberhausen'>Oberhausen</a> (Germany). I started programming in April
-            2020, and ever since then, I have truly fallen in love with development.
-            <br><br>
-            I did my first steps with coding by writing discord bots in python, until web development grabbed my
-            attention. Like anyone else, I started learning HTML and plain (S)CSS but then transitioned quickly to
-            frameworks like <a href='https://getbootstrap.com/'>Bootstrap</a> or <a href='https://tailwindcss.com/'>TailwindCSS</a>.
-            Making my way through JavaScript, TypeScript captured my interest and I started learning fully featured
-            frameworks like <a href='https://react.dev/'>React</a> and <a href='https://svelte.dev/'>Svelte</a>.
-            <br><br>
-            My current project is called <a href='https://hondicard.com/'>Hondicard</a>, it's a flashcard-based learning
-            application that I created together with a friend in our development team <a href='https://metahond.dev'>Metahond</a>.
-        </p>
-        <img class='h-96 aspect-square drop-shadow-image rounded-md' src='img/fl4wless.svg'
+        <div>
+            <p>
+                As a developer, my coding journey began in
+                <mark>April 2020</mark>
+                . Since then, I have diligently acquired
+                proficiency in
+                <mark>various programming languages and frameworks</mark>
+                , empowering me to transform my creative
+                concepts into tangible realities.
+            </p>
+            <div class='mt-5 bg-neutral-800 rounded-xl p-5'>
+                <h3 class='font-koulen text-2xl'>Profile</h3>
+
+                <ul class='flex flex-col gap-4 p-5'>
+                    <li class='flex items-center gap-3'>
+                        <User />
+                        <span>Noah</span>
+                    </li>
+                    <li class='flex items-center gap-3'>
+                        <MapPin />
+                        <span>
+                            <a href='https://en.wikipedia.org/wiki/Oberhausen'>Oberhausen</a>, Germany
+                        </span>
+                    </li>
+                    <li class='flex items-center gap-3'>
+                        <Cpu />
+                        <span>
+                            <a href='https://react.dev'>React</a>, <a href='https://svelte.dev'>Svelte</a>, <a
+                            href='https://tailwindcss.com'>Tailwind</a>
+                        </span>
+                    </li>
+                    <li class='flex items-center gap-3'>
+                        <Globe />
+                        <span>
+                            <a href='https://typescriptlang.org'>Typescript</a>, HTML, CSS
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <img class='h-80 aspect-square rounded-full border border-neutral-700 m-10' src='img/fl4wless.svg'
              alt="Noah's Avatar" />
+    </div>
+
+    <div class='mt-10'>
+        <h3 class='font-koulen text-2xl'>I like</h3>
+
+        <ul class='flex justify-around p-5'>
+            <li class='flex items-center gap-3 bg-neutral-800 px-10 rounded-lg py-2'>
+                <Code2 class='text-primary-500' />
+                <span>Coding</span>
+            </li>
+            <li class='flex items-center gap-3 bg-neutral-800 px-10 rounded-lg py-2'>
+                <Bike class='text-primary-500' />
+                <span>Sports</span>
+            </li>
+            <li class='flex items-center gap-3 bg-neutral-800 px-10 rounded-lg py-2'>
+                <Joystick class='text-primary-500' />
+                <span>Gaming</span>
+            </li>
+            <li class='flex items-center gap-3 bg-neutral-800 px-10 rounded-lg py-2'>
+                <Music class='text-primary-500' />
+                <span>Music</span>
+            </li>
+        </ul>
     </div>
 </section>
