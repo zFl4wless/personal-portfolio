@@ -139,4 +139,8 @@
     a {
         @apply underline text-primary-400 hover:brightness-110 transition ease-in-out;
     }
+
+    dialog::backdrop {
+        @apply bg-neutral-900 bg-opacity-75;
+    }
 }
