@@ -5,7 +5,7 @@
 
 <section id='projects-section' class='min-h-screen px-10 xl:px-10 2xl:px-60 py-10'>
     <h2
-        class="mb-16 text-4xl font-bold text-center tracking-wide before:animate-pulse before:content-['['] before:mr-2 before:text-3xl before:text-primary-500 after:animate-pulse after:content-[']'] after:ml-2 after:text-3xl after:text-primary-500"
+        class="mb-16 text-4xl font-koulen font-bold text-center tracking-wide before:animate-pulse before:content-['['] before:mr-3 before:text-4xl before:text-primary-500 after:animate-pulse after:content-[']'] after:ml-3 after:text-4xl after:text-primary-500"
     >
         Projects
     </h2>
@@ -27,8 +27,9 @@
         <ProjectItem project={projects[1]} index={1}>
             A showcase project that
             <mark>lists all operators</mark>
-            with further information from the game
-            <mark>Rainbow Six Siege</mark>.
+            with further information from the
+            <mark>Rainbow Six Siege</mark>
+            video game.
             <br /><br />
             I saw other websites on the internet with the PokeAPI that lists every Pokemon, so I thought it would be
             <mark>fun to do</mark>
@@ -36,7 +37,7 @@
             is not an API for Rainbow Six Siege or their operators. Maybe I will create one in the future. I also wanted
             to try out
             <mark>SvelteKit for the first time</mark>
-            .
+            since I got hyped by friends.
         </ProjectItem>
     </div>
 </section>
