@@ -1,5 +1,5 @@
 <header class="flex justify-between items-center py-3">
-    <img src="img/Logo.png" alt="Logo" width={110} />
+    <a href='/' class='font-koulen text-2xl text-neutral-100 no-underline cursor-pointer'>Fl4wless</a>
     <div class="flex items-center gap-6">
         <a class="transition ease-in-out hover:opacity-75 cursor-pointer" href="https://github.com/zFl4wless">
             <img src="icons/github.svg" alt="GitHub Logo" height={32} width={32} />

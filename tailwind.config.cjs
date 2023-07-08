@@ -37,6 +37,7 @@ module.exports = {
             },
             fontFamily: {
                 'open-sans': ['Open Sans', 'sans-serif'],
+                'koulen': ['Koulen', 'display'],
             },
         },
     },
