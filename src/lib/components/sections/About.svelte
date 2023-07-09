@@ -1,5 +1,6 @@
 <script lang='ts'>
     import { User, MapPin, Cpu, Globe, Code2, Bike, Joystick, Music } from 'lucide-svelte';
+    import Avatar from '../about/Avatar.svelte';
 </script>
 
 <section id='projects-section' class='min-h-screen flex flex-col justify-center px-6 xl:px-20 2xl:px-60 py-10'>
@@ -50,8 +51,8 @@
                 </ul>
             </div>
         </div>
-        <img class='hidden lg:block h-80 aspect-square rounded-full border border-neutral-700 m-10' src='img/fl4wless.svg'
-             alt="Noah's Avatar" />
+
+        <Avatar />
     </div>
 
     <div class='mt-10'>
