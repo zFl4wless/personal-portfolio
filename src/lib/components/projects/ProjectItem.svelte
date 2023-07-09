@@ -37,7 +37,7 @@
                     class='flex items-center text-base text-neutral-100 no-underline gap-1.5 bg-primary-500 px-4 py-2 rounded-md hover:brightness-110 transition ease-in-out'
                 >
                     <Radio size={20} />
-                    Live Version
+                    Live
                 </a>
             {/if}
             {#if project.codeLink}
