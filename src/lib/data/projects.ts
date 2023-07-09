@@ -5,7 +5,7 @@ export default [
             'A collaborative learning plattform. If you are a fan of a card-based learning system, Hondicard is perfectly made for you. You can also share your cards with your friends.\n\nThe inspiration for this project emerged during a brainstorming session with a friend, as we contemplated how we could enhance our learning experience through collaborative flashcards. We realized that sharing flashcards could not only reduce our workload, but also add an element of enjoyment, particularly with the aid of a high-quality app. Hence, we decided to bring this concept to life by developing our own application.',
         date: 'Aug 2022 - Today',
         tags: ['TypeScript', 'ReactJS', 'TailwindCSS', 'Metahond'],
-        visitLink: 'https://hondicard.metahond.codes',
+        visitLink: 'https://hondicard.com',
         codeLink: undefined,
         image: '/img/projects/hondicard.png',
     },
