@@ -15,13 +15,16 @@
 <div class='bg-neutral-850 rounded-xl grid grid-cols-1 lg:grid-cols-[auto_auto] items-center gap-10 lg:20'>
     <div class="bg-neutral-800 shadow-lg p-10 {index % 2 !== 0 ? 'order-1 rounded-r-xl' : 'order-2 lg:order-none rounded-l-xl'}">
         <p class='text-2xl font-semibold mb-2'>{project.title}</p>
+
         <span class='inline-flex items-center gap-2 text-xs bg-neutral-700 rounded-md px-3 py-1.5 mb-6'>
             <Calendar size={14} />
             {project.date}
         </span>
+
         <p class='text-justify mb-4'>
             <slot />
         </p>
+
         <ul class='flex flex-wrap gap-1.5'>
             {#each project.tags as tag}
                 <li class='flex-grow bg-neutral-700 text-xs text-center uppercase rounded-md px-8 py-1.5'>
@@ -29,6 +32,7 @@
                 </li>
             {/each}
         </ul>
+
         <div class='flex items-center gap-2 mt-10'>
             {#if project.visitLink}
                 <a
@@ -52,6 +56,7 @@
             {/if}
         </div>
     </div>
+
     <div class='flex justify-center items-center max-w-2xl mx-auto'>
         <img src={project.image} alt={project.title} />
     </div>

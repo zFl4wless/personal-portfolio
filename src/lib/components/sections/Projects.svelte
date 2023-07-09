@@ -24,6 +24,7 @@
             high-quality app. Hence, we decided to bring this concept to life by founding <a
             href='https://metahond.dev'>Metahond Development</a> and developing our own application.
         </ProjectItem>
+
         <ProjectItem project={projects[1]} index={1}>
             A showcase project that
             <mark>lists all operators</mark>
