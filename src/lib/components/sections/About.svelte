@@ -21,6 +21,7 @@
                 , empowering me to transform my creative
                 concepts into tangible realities.
             </p>
+
             <div class='mt-5 bg-neutral-800 rounded-xl p-5'>
                 <h3 class='font-koulen text-2xl'>Profile</h3>
 
@@ -52,7 +53,9 @@
             </div>
         </div>
 
-        <Avatar />
+        <div class='hidden lg:block'>
+            <Avatar />
+        </div>
     </div>
 
     <div class='mt-10'>
