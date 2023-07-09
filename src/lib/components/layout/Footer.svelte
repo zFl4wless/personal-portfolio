@@ -19,7 +19,8 @@
         {coolMessage}
     </span>
 
-    <button class='transition ease-in-out text-neutral-300 hover:brightness-125' on:click={() => dialog.showModal()}>
+    <button class='transition ease-in-out underline text-neutral-300 hover:brightness-125'
+            on:click={() => dialog.showModal()}>
         Legal Notice
     </button>
 
