@@ -13,8 +13,9 @@
     let dialog;
 </script>
 
-<footer class='flex justify-between px-6 py-4 text-base'>
-    <span class='text-neutral-300'>
+<footer
+    class='flex flex-col sm:flex-row justify-center sm:justify-between text-center sm:text-left gap-1.5 sm:gap-0 px-6 py-4 text-base'>
+    <span class='text-neutral-300 italic'>
         {coolMessage}
     </span>
 
