@@ -1,5 +1,5 @@
 <script lang='ts'>
-    import LegalDialog from '../LegalDialog.svelte';
+    import LegalDialog from '../legal/LegalDialog.svelte';
 
     const coolMessage = [
         'Developed with ☕ and a sprinkle of magic.',
