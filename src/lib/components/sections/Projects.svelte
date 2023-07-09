@@ -16,20 +16,19 @@
             <mark>collaborative learning plattform</mark>
             . If you are a fan of a card-based learning system, Hondicard
             is perfectly made for you. You can also share your cards with your friends.<br /><br />The inspiration for
-            this project emerged during a brainstorming session with <a href='https://github.com/zflxw'>a friend</a>, as
-            we contemplated how we could enhance our learning experience through collaborative flashcards. We realized
-            that
+            this project emerged during a brainstorming session with <a href='https://github.com/zflxw' target='_blank'>a
+            friend</a>, as we contemplated how we could enhance our learning experience through collaborative
+            flashcards. We realized that
             <mark>sharing flashcards</mark>
-            could not only reduce our workload, but also add an element of
-            enjoyment, particularly with the aid of a high-quality app. Hence, we decided to bring this concept to life
-            by developing our own application.
+            could not only reduce our workload, but also add an element of enjoyment, particularly with the aid of a
+            high-quality app. Hence, we decided to bring this concept to life by founding <a
+            href='https://metahond.dev'>Metahond Development</a> and developing our own application.
         </ProjectItem>
         <ProjectItem project={projects[1]} index={1}>
             A showcase project that
             <mark>lists all operators</mark>
-            with further information from the
-            <mark>Rainbow Six Siege</mark>
-            video game.
+            with further information from the <a href='https://www.ubisoft.com/en-us/game/rainbow-six/siege'
+                                                 target='_blank'>Rainbow Six Siege</a> video game.
             <br /><br />
             I saw other websites on the internet with the PokeAPI that lists every Pokemon, so I thought it would be
             <mark>fun to do</mark>
