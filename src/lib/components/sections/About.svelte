@@ -14,13 +14,22 @@
     <div class='grid lg:grid-cols-[auto_auto] justify-center items-center gap-20'>
         <div>
             <p class='text-justify'>
-                As a developer, my coding journey began in
-                <mark>April 2020</mark>
-                . Since then, I have diligently acquired
-                proficiency in
-                <mark>various programming languages and frameworks</mark>
-                , empowering me to transform my creative
-                concepts into tangible realities.
+                I
+                <mark>started</mark>
+                my
+                <mark>coding</mark>
+                journey
+                <mark>in April 2020</mark>
+                and it has been an amazing experience for me. Since then, I have worked hard to become skilled in
+                <mark>different programming languages</mark>
+                and frameworks. It's been really exciting to see how I can
+                <mark>turn</mark>
+                my
+                <mark>creative ideas into real things</mark>
+                through coding. I love the feeling when I write code and bring my ideas to life. This journey has been a
+                lot of fun, and I'm
+                <mark>still passionate about learning and growing</mark>
+                as a developer.
             </p>
 
             <Profile />
