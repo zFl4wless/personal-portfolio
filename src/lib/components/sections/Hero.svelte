@@ -45,7 +45,7 @@
             <h1 class='text-7xl font-bold text-center xl:text-left tracking-wide'>
                 Hi, I'm
                 <mark
-                    class='relative z-[1] cursor-default before:content-[" "] before:z-[-1] before:block before:absolute before:inset-0 before:top-1/2 before:bg-primary-500 before:bg-opacity-20 before:scale-x-0 before:origin-bottom-right before:transition-transform before:ease-in-out before:hover:scale-x-100 before:hover:origin-bottom-left'>
+                    class='relative z-[1] before:content-[" "] before:z-[-1] before:block before:absolute before:inset-0 before:top-1/2 before:bg-primary-500 before:bg-opacity-20 before:scale-x-0 before:origin-bottom-right before:transition-transform before:ease-in-out before:hover:scale-x-100 before:hover:origin-bottom-left'>
                     Noah
                 </mark>
                 !
