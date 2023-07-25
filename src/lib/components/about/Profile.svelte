@@ -2,7 +2,7 @@
     import { Cpu, Globe, MapPin, User } from 'lucide-svelte';
 </script>
 
-<div class='mt-5 bg-neutral-800 rounded-xl shadow-lg p-5'>
+<div class='mt-5 bg-neutral-850 rounded-xl shadow-lg p-5'>
     <h3 class='font-koulen text-2xl'>Profile</h3>
 
     <ul class='flex flex-col gap-4 p-5'>

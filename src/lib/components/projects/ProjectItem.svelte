@@ -12,8 +12,8 @@
     export let index: number;
 </script>
 
-<div class='bg-neutral-850 rounded-xl grid grid-cols-1 lg:grid-cols-[auto_auto] items-center gap-10 lg:20'>
-    <div class="bg-neutral-800 shadow-lg p-10 {index % 2 !== 0 ? 'order-1 rounded-r-xl' : 'order-2 lg:order-none rounded-l-xl'}">
+<div class='border-4 border-neutral-850 rounded-xl grid grid-cols-1 lg:grid-cols-[auto_auto] items-center gap-10 lg:20'>
+    <div class="bg-neutral-850 p-10 {index % 2 !== 0 ? 'order-1' : 'order-2 lg:order-none'}">
         <p class='text-2xl font-semibold mb-2'>{project.title}</p>
 
         <span class='inline-flex items-center gap-2 text-xs bg-neutral-700 rounded-md px-3 py-1.5 mb-6'>
