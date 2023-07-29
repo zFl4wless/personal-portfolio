@@ -7,24 +7,32 @@
 
     <ul class='flex flex-col gap-4 p-5'>
         <li class='flex items-center gap-3'>
-            <User />
+            <abbr title='Name' class='cursor-help'>
+                <User />
+            </abbr>
             <span>Noah</span>
         </li>
         <li class='flex items-center gap-3'>
-            <MapPin />
+            <abbr title='Location' class='cursor-help'>
+                <MapPin />
+            </abbr>
             <span>
                 <a href='https://en.wikipedia.org/wiki/Oberhausen'>Oberhausen</a>, Germany
             </span>
         </li>
         <li class='flex items-center gap-3'>
-            <Cpu />
+            <abbr title='Currently favorite Frameworks' class='cursor-help'>
+                <Cpu />
+            </abbr>
             <span>
                 <a href='https://react.dev'>React</a>, <a href='https://svelte.dev'>Svelte</a>, <a
                 href='https://tailwindcss.com'>Tailwind</a>
             </span>
         </li>
         <li class='flex items-center gap-3'>
-            <Globe />
+            <abbr title='Currently favorite Languages' class='cursor-help'>
+                <Globe />
+            </abbr>
             <span>
                 <a href='https://typescriptlang.org'>TypeScript</a>, HTML, CSS
             </span>
