@@ -39,6 +39,9 @@ module.exports = {
                 'open-sans': ['Open Sans', 'sans-serif'],
                 'koulen': ['Koulen', 'display'],
             },
+            maxWidth: {
+                '8xl': '120rem',
+            }
         },
     },
     plugins: [
