@@ -12,7 +12,7 @@
     export let index: number;
 </script>
 
-<div class='border-4 border-neutral-850 rounded-xl grid grid-cols-1 lg:grid-cols-[auto_auto] items-center gap-10 lg:20'>
+<div class='border-4 border-neutral-850 rounded-xl grid grid-cols-1 lg:grid-cols-[auto_auto] items-center lg:20'>
     <div class="bg-neutral-850 p-10 {index % 2 !== 0 ? 'order-1' : 'order-2 lg:order-none'}">
         <p class='text-2xl font-semibold mb-2'>{project.title}</p>
 
@@ -57,7 +57,7 @@
         </div>
     </div>
 
-    <div class='flex justify-center items-center max-w-2xl mx-auto'>
+    <div class='grid place-items-center w-[30rem] p-5 mx-auto'>
         <img src={project.image} alt={project.title} />
     </div>
 </div>

@@ -5,7 +5,7 @@ export default [
         tags: ['TypeScript', 'ReactJS', 'TailwindCSS', 'Metahond'],
         visitLink: 'https://hondicard.com',
         codeLink: undefined,
-        image: '/img/projects/hondicard.png',
+        image: '/img/projects/hondicard.svg',
     },
     {
         title: 'R6 Cards',
@@ -13,6 +13,6 @@ export default [
         tags: ['TypeScript', 'Svelte', 'TailwindCSS', 'Rainbow Six Siege', 'Fun'],
         visitLink: 'https://r6-cards.vercel.app/',
         codeLink: 'https://github.com/zFl4wless/r6-cards',
-        image: '/img/projects/r6-cards.png',
+        image: '/img/projects/r6-cards.svg',
     },
 ];
