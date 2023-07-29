@@ -143,4 +143,17 @@
     dialog::backdrop {
         @apply bg-neutral-900 bg-opacity-75;
     }
+
+    ::-webkit-scrollbar {
+        @apply w-1.5 h-1.5;
+    }
+    ::-webkit-scrollbar-track {
+        @apply bg-neutral-900;
+    }
+    ::-webkit-scrollbar-thumb {
+        @apply bg-primary-500 rounded-full;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        @apply bg-primary-600;
+    }
 }
