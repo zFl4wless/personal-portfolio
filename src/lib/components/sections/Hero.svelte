@@ -35,7 +35,8 @@
     });
 </script>
 
-<section class="relative bg-neutral-900 bg-[url('/img/Background.png')] bg-center bg-no-repeat bg-cover grid grid-rows-[min-content_auto] min-h-screen px-6 overflow-hidden">
+<section id='hero-section'
+         class="relative bg-neutral-900 bg-[url('/img/Background.png')] bg-center bg-no-repeat bg-cover grid grid-rows-[min-content_auto] min-h-screen px-6 overflow-hidden">
     <Stars />
 
     <Header />
