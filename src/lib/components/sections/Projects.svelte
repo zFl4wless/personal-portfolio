@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import ProjectItem from '../projects/ProjectItem.svelte';
 	import projects from '../../data/projects';
 </script>
@@ -13,7 +13,7 @@
 	<div class="flex flex-col gap-20">
 		<ProjectItem project={projects[0]} index={0}>
 			A
-			<mark>collaborative learning plattform</mark>
+			<mark>collaborative learning platform</mark>
 			. If you are a fan of a card-based learning system, Hondicard is perfectly made for you. You can also share your cards
 			with your friends.<br /><br />The inspiration for this project emerged during a brainstorming session with
 			<a href="https://github.com/zflxw" target="_blank">a friend</a>, as we contemplated how we could enhance our
