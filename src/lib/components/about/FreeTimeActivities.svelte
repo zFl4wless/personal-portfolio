@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Bike from '$lucide/bike.svelte';
 	import Code2 from '$lucide/code-2.svelte';
 	import Joystick from '$lucide/joystick.svelte';

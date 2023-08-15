@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Cpu from '$lucide/cpu.svelte';
 	import Globe from '$lucide/globe.svelte';
 	import MapPin from '$lucide/map-pin.svelte';
