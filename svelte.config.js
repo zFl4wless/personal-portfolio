@@ -1,5 +1,16 @@
-import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
+import adapter from '@sveltejs/adapter-auto';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
-export default {
-    preprocess: vitePreprocess(),
-}
+/** @type {import("@sveltejs/kit").Config} */
+const config = {
+	preprocess: vitePreprocess(),
+
+	kit: {
+		adapter: adapter(),
+		alias: {
+			$lucide: 'node_modules/lucide-svelte/dist/svelte/icons',
+		},
+	},
+};
+
+export default config;
