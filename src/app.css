@@ -117,6 +117,15 @@
     url('/fonts/open-sans-v35-latin-800italic.ttf') format('truetype');
 }
 
+@font-face {
+    font-display: swap;
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/fira-code-v21-latin-regular.woff2') format('woff2'),
+    url('/fonts/fira-code-v21-latin-regular.ttf') format('truetype');
+}
+
 /* TAILWIND */
 
 @tailwind base;
@@ -144,8 +153,8 @@
         @apply underline text-primary-400 hover:brightness-110 transition ease-in-out;
     }
 
-    dialog::backdrop {
-        @apply bg-neutral-900 bg-opacity-75;
+    code {
+        @apply font-fira;
     }
 
     ::-webkit-scrollbar {
